@@ -1,0 +1,21 @@
+tasks:
+  - name: "Crawler scripts"
+    commands:
+      - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/crawler/assay_crawl.py
+      - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/crawler/enterprises_anal_crawl.py
+      - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/crawler/trend_crawl.py
+
+  - name: "Preprocessing scripts"
+    commands:
+      - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/prep/anal_prep.py
+      - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/prep/assay_prep.py
+      - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/prep/trend_prep.py
+
+  - name: "Data merge script"
+    commands:
+      - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/run/run_crawl_data_merge.py
+
+  - name: "Modeling scripts"
+    commands:
+      - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/modeling/clustering_rader_chart.ipynb
+      - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/modeling/token_embedding_predict.ipynb
