@@ -19,3 +19,4 @@ tasks:
     commands:
       - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/modeling/clustering_rader_chart.ipynb
       - python /Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/modeling/token_embedding_predict.ipynb
+
