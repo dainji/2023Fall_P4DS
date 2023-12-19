@@ -61,7 +61,8 @@
     - 또한, 지원자에게 각 기업에서 중요시 여기는 5가지 특징에 대해 본인 역량을 레이더 차트로 표기하여 역량 채울 수 있는 방법을 제공
 - run
     - 앞서 전처리된 데이터들을 한 csv로 merge하기 위함
-    - anal_prep.csv, trend_prep.csv, assay_prep.csv를 merge하여 crawl_merged_data.csv
+    - anal_prep.csv, trend_prep.csv, assay_prep.csv를 merge하기 위해 run_crawl_merge_data.py 파일을 이용하여 csv인 crawl_merged_data.csv 생성
+    - task.yaml을 만들어 crawler, prep, modeling 순으로 태스크순으로 정리하여 main.py에서 활용할 수 있도록 업무순서 정리하였음
 - past_cd1
     - 기존 2022년에 실행하였던 코드를 넣어둔 폴더
     - 기업분석보고서, 기업트렌드보고서, 면접질문, 면접후기, 인적성검사결과 등의 분야의 데이터를 크롤링하는 코드
@@ -69,6 +70,18 @@
     - 모델링까지 이뤄지지 않아 크롤링 코드만 존재
 
 
+
+
+## 프로그램 실행 방법
+방법1.
+    1. run 폴더에 존재하는 main.py를 실행
+방법2.
+    1. crawler 폴더에서 3개의 파일을 실행
+    2. output에 저장된 데이터를 활용하여 prep 폴더에서 3개의 파일을 실행
+    3. 2번 활동을 통해 저장된 데이터를 활용하여 run 폴더에 존재하는 run_crawl_merge_data.py를 실행
+    4. output에 저장된 데이터를 활용하여 model 폴더에서 2개의 파일 실행
+        이때 주의할 점은 새로운 지원자의 데이터가 없기 때문에 임의로 만든 output/new_resume.csv를 이용하여 예측 실행
+        - 데이터 관련 정보는 [6. 참고 사항](#참고-사항) 참고 바람
 
 
 ## 기존 코드 대비 발전한 점
@@ -114,6 +127,7 @@
 - mac 유저가 아닌 경우 driver 설정 필요
     - chrome driver 참고 사항 확인
     - https://chromedriver.chromium.org/downloads
+- 경로 변경 필수
 
 
 
