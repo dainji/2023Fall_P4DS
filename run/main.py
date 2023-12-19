@@ -13,7 +13,7 @@ def execute_tasks(task_list):
 
 def main():
     # Load tasks from the YAML file
-    with open('tasks.yaml', 'r') as file:
+    with open('/Users/dain/PycharmProjects/Fall_2023/2023Fall_P4DS/run/task.yaml', 'r') as file:
         tasks = yaml.safe_load(file)
 
     # Execute tasks
